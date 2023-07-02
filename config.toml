@@ -9,6 +9,15 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+generate_feed = true
+feed_filename = "atom.xml"
+
+# The taxonomies to be rendered for the site and their configuration of the default languages
+taxonomies = [
+    { name = "tags", feed = true, lang = "en" },
+    { name = "categories", feed = true, lang = "en" },
+]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -17,15 +26,8 @@ highlight_code = true
 [languages]
 
 [languages.en]
-title = "Papaya"
+title = "Chris Mayes"
 description = "A clean Zola theme for blogging and projects"
-generate_feed = true
-feed_filename = "atom.xml"
-# The taxonomies to be rendered for the site and their configuration of the default languages
-taxonomies = [
-    { name = "tags", feed = true, lang = "en" },
-    { name = "categories", feed = true, lang = "en" },
-]
 
 [languages.en.translations]
 projects = "Projects"
@@ -50,9 +52,38 @@ next_page = "To older posts"
 date_format = "%B %e, %Y"
 
 
+
 [extra]
 # Put all your custom variables here
 
+# Development environment. Used by the page macros to load remote content only when in "prod" mode
+env = "ZOLA_ENV"
+
+# Color theme mode. Options: light, dark, auto (automatically switch depending on OS/user agent settings)
+color_mode = "auto"
+
+# List of Papaya navigational menu items. Used to construct the navigation bar. See the README for item schema.
+menu_items = [
+    { name = "projects", url = "$LANG_BASE_URL/projects", show_recent = true, recent_items = 3, recent_trans_key = "recent_projects", more_trans_key = "more_projects" },
+    { name = "blog", url = "$LANG_BASE_URL/blog", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
+    # tag is not a zola section, it's just a link.
+    { name = "tags", url = "$LANG_BASE_URL/tags" },
+    { name = "about", url = "$LANG_BASE_URL/about", show_recent = false },
+]
+
+[extra.ogp]
+locale = "en_US"
+first_name = "Chris"
+last_name = "Mayes"
+
+# Footer social links; full options listed in macros/social.html
+[extra.social]
+github = "cmayes"
+linkedin = "mcmayes"
+other = [
+    { name = "Mastodon", font_awesome = "fa-brands fa-mastodon", url = "https://notacult.social/@cmayes" }
+]
+
 # CDN links
 [extra.cdn]
-font_awesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+font_awesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
