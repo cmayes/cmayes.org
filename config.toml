@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://cmayes.org"
 
 theme = "papaya"
 
@@ -27,7 +27,7 @@ highlight_code = true
 
 [languages.en]
 title = "Chris Mayes"
-description = "A clean Zola theme for blogging and projects"
+description = "Contentedly curious"
 
 [languages.en.translations]
 projects = "Projects"
