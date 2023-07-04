@@ -26,5 +26,9 @@ favicon. I thought about adding a search bar, but I like the uncluttered layout 
 I'm going to skip search for now. Should I write enough to warrant a search, it'll be pretty simple to add.
 
 Creating the build and deployment pipeline in [Cloudflare Pages](https://pages.cloudflare.com) was simple
-and smooth. The first attempt timed out, but it went off without a hitch the second time around. The DNS integration
-with my hosted domain was seamless (as one might expect from Cloudflare). I am very pleased.
+and smooth. Wiring up to [this site's Github repository](https://github.com/cmayes/cmayes.org) was easy
+and smooth. The first deployment attempt timed out, but it went off without a hitch the second time around. 
+Subsequent changes to the project's release branch triggered new pipeline runs almost immediately. The DNS 
+integration with my hosted domain was seamless (as one might expect from Cloudflare). 
+
+I am very pleased.
