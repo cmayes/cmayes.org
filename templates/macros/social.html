@@ -2,6 +2,15 @@
 <span class="icon-text">
   {% set base_url = get_url(path="", lang=lang) %}
 
+  {% if social_config.mastodon %}
+  <a rel="me" href="{{ social_config.mastodon.url }}" aria-label="Open {{ social_config.mastodon.username }} Mastodon" target="_blank">
+    <span class="icon is-large">
+      <i class="fa-brands fa-mastodon" aria-hidden="true" title="Mastodon"></i>
+    </span>
+  </a>
+  {% endif %}
+
+
   {% if social_config.other %}
   {% for social in social_config.other %}
   <a href={{ social.url }} aria-label="Open {{ social.name }}" target="_blank">
