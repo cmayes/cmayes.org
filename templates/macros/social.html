@@ -3,7 +3,7 @@
   {% set base_url = get_url(path="", lang=lang) %}
 
   {% if social_config.mastodon %}
-  <a rel="me" href="{{ social_config.mastodon.url }}" aria-label="Open {{ social_config.mastodon.username }} Mastodon" target="_blank">
+  <a rel="me" href="{{ social_config.mastodon.url | safe }}" aria-label="Open {{ social_config.mastodon.username }} Mastodon" target="_blank">
     <span class="icon is-large">
       <i class="fa-brands fa-mastodon" aria-hidden="true" title="Mastodon"></i>
     </span>
