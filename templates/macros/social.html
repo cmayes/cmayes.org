@@ -10,7 +10,6 @@
   </a>
   {% endif %}
 
-
   {% if social_config.other %}
   {% for social in social_config.other %}
   <a href={{ social.url }} aria-label="Open {{ social.name }}" target="_blank">
@@ -38,6 +37,15 @@
     </span>
   </a>
   {% endif %}
+
+  {% if social_config.lastfm %}
+  <a rel="me" href="https://www.last.fm/user/{{ social_config.lastfm }}" aria-label="Open {{ social_config.lastfm }} LastFM" target="_blank">
+    <span class="icon is-large">
+      <i class="fa-brands fa-lastfm" aria-hidden="true" title="LastFM"></i>
+    </span>
+  </a>
+  {% endif %}
+
 
   {% if social_config.linkedin %}
   <a href="https://www.linkedin.com/in/{{ social_config.linkedin }}"

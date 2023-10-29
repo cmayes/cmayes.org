@@ -87,6 +87,7 @@ last_name = "Mayes"
 # Footer social links; full options listed in macros/social.html
 [extra.social]
 github = "cmayes"
+lastfm = "cmayes"
 linkedin = "mcmayes"
 mastodon = { url = "https://notacult.social/@cmayes", username = "cmayes" }
 #other = [
