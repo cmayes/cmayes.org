@@ -26,7 +26,7 @@ and [MOG] (horrendous software with a good catalog). It makes me feel like Rip v
 branded as Napster, a service I used a lot in the magical span of 1999-2000 when everything was free
 as long as you didn't care about sound quality nor about catching a virus or three. I remember Y!MU shutting down
 and my subsequently brief foray with Rhapsody. I also remember the handful of tracks I bought off of Y!MU ceasing
-to work, though I blame myself for ever buying DRM'ed media.
+to work, though I blame myself for ever buying DRM'ed media. 
 
 I switched to MOG after a brief frantic search for something better than Rhapsody. The software was horrendously
 buggy, but I loved the music selection. It seems that MOG has been rebranded as "Beats Music" and still has a poor

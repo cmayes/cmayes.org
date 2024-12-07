@@ -5,7 +5,15 @@
   {% if social_config.mastodon %}
   <a rel="me" href="{{ social_config.mastodon.url | safe }}" aria-label="Open {{ social_config.mastodon.username }} Mastodon" target="_blank">
     <span class="icon is-large">
-      <i class="fa-brands fa-mastodon" aria-hidden="true" title="Mastodon"></i>
+      <i class="fa-brands fa-mastodon fa-lg" aria-hidden="true" title="Mastodon"></i>
+    </span>
+  </a>
+  {% endif %}
+
+    {% if social_config.librefm %}
+  <a rel="me" href="https://libre.fm/user/{{ social_config.librefm }}/" aria-label="Open {{ social_config.librefm }} LibreFM" target="_blank">
+    <span class="icon is-large">
+      <i class="fa-solid fa-music fa-lg" aria-hidden="true" title="LibreFM"></i>
     </span>
   </a>
   {% endif %}
@@ -92,7 +100,7 @@
   {% endif %}
 
   {% if config.generate_feed %}
-  <a href="{{ base_url }}/{{ config.feed_filename }}" aria-label="Open atom xml feed" target="_blank">
+  <a href="{{ base_url }}/{{ config.feed_filenames[0] }}" aria-label="Open atom xml feed" target="_blank">
     <span class="icon is-large">
       <i class="fas fa-rss fa-lg" aria-hidden="true" title="atom xml feed"></i>
     </span>

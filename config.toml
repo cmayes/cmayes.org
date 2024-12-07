@@ -9,8 +9,8 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-generate_feed = true
-feed_filename = "atom.xml"
+generate_feeds = true
+feed_filenames = ["atom.xml"]
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 taxonomies = [
@@ -90,6 +90,7 @@ github = "cmayes"
 lastfm = "cmayes"
 linkedin = "mcmayes"
 mastodon = { url = "https://notacult.social/@cmayes", username = "cmayes" }
+librefm = "cmayes"
 #other = [
 #    { name = "Mastodon", font_awesome = "fa-brands fa-mastodon", url = "https://notacult.social/@cmayes" }
 #]

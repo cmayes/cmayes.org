@@ -18,8 +18,8 @@ though I use [Kotlin](https://kotlinlang.org/) where I can. We target [AWS](http
 of our services, though plenty still live on-premises. I use [Python](https://www.python.org/) for scripts,
 automation, and small projects.
 
-I use [Ubuntu](https://ubuntu.com/) for my home machines as it's a fine, well-supported Linux distribution.
-My youthful adventures with trendier distributions were entertaining and educational, but I favor a platform
+I use [Pop!_OS](https://pop.system76.com/) for my home machines as it's a fine, well-supported Linux distribution.
+My adventures with trendier distributions were entertaining and educational, but I favor a platform
 that I don't need to think about, these days.
 
 Most of my home projects start in Python (e.g. [Spotcrates](@/projects/spotcrates/index.md)) and may move to 
