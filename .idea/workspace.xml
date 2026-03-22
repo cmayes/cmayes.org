@@ -4,13 +4,103 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dbeb6a2-6557-4940-ac8f-db3d03d1c6b8" name="Changes" comment="Upgrade to Zola 0.19.2 (required changing some references to array refs).&#10;Add libre.fm social badge.">
-      <change beforePath="$PROJECT_DIR$/templates/macros/social.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/macros/social.html" afterDir="false" />
+    <list default="true" id="5dbeb6a2-6557-4940-ac8f-db3d03d1c6b8" name="Changes" comment="Try adding rel=me to github link.">
+      <change afterPath="$PROJECT_DIR$/doc/prompts/hugo/initial_port_from_zola.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog/blogging.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/blogging.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog/deployment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/deployment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog/lastfm.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/lastfm.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog/nixos_to_pop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/nixos_to_pop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/projects/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/spotcrates/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/projects/spotcrates/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/processed_images/cmayes_sitting_wide.e2d76b16cf6e9afa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/processed_images/sunrise_notch.571ed066b1781fb9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/macros/social.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/.github/workflows/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/config.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/about/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/about/index.zh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/about/me.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/_index.zh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/another-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/blog-with-image/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/blog-with-image/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/blog-with-image/index.zh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/no-summary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/what-is-zola.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/what-is-zola.zh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/blog/再别康桥.zh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/_index.zh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/categories.zh.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/project-1/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/project-1/index.zh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/project-2/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/project-2/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/project-3/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/project-3/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/content/projects/project-3/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/blendedindex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/featured_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/featured_image_extended.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/img_-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/img_0.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/img_0.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/img_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/index_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/project.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/project_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/projects.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/pics/projects_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/sass/_syntax-theme-dark.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/sass/_syntax-theme-light.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/sass/auto.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/sass/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/sass/dark.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/sass/light.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/static/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/static/syntax-theme-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/static/syntax-theme-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/anchor-link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/categories/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/categories/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/macros/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/macros/social.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/shortcodes/img.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/tags/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/templates/tags/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/papaya/theme.toml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="99" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -21,25 +111,34 @@
   </component>
   <component name="Git.Settings">
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="trunk" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Chris-Mayes_clv"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Chris-Mayes_clv&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:cmayes/cmayes.org.git",
-    "accountId": "66353639-be4b-490e-8a66-c11ba14583ef"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:cmayes/cmayes.org.git&quot;,
+    &quot;accountId&quot;: &quot;66353639-be4b-490e-8a66-c11ba14583ef&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="4wj0bl8t" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -57,24 +156,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;trunk&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/cmayes/code/rust/projects/cmayes.org&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "hugo",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/cmayes/code-work/java/projects/svcs-retractions",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/blog" />
@@ -99,8 +204,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
@@ -133,7 +238,9 @@
       <workItem from="1705855624816" duration="19000" />
       <workItem from="1705855656320" duration="634000" />
       <workItem from="1733549226406" duration="794000" />
-      <workItem from="1733584260801" duration="3347000" />
+      <workItem from="1733584260801" duration="6071000" />
+      <workItem from="1773524565817" duration="851000" />
+      <workItem from="1774150261824" duration="5254000" />
     </task>
     <task id="LOCAL-00001" summary="Remove theme copy.">
       <option name="closed" value="true" />
@@ -199,13 +306,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733586417547</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Try adding rel=me to github link.">
+      <option name="closed" value="true" />
+      <created>1733588291632</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733588291632</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="First full site." />
     <MESSAGE value="Remove theme copy." />
     <MESSAGE value="Change URL to www.cmayes.org" />
@@ -215,7 +332,9 @@
     <MESSAGE value="Mark Mastodon URL as &quot;safe.&quot;" />
     <MESSAGE value="Blog post on NixOS. Start on .gitignore for .idea stuff." />
     <MESSAGE value="Upgrade to Zola 0.19.2 (required changing some references to array refs).&#10;Add libre.fm social badge." />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade to Zola 0.19.2 (required changing some references to array refs).&#10;Add libre.fm social badge." />
+    <MESSAGE value="Try adding rel=me to github link." />
+    <option name="LAST_COMMIT_MESSAGE" value="Try adding rel=me to github link." />
+    <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

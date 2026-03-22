@@ -4,6 +4,8 @@
 out
 gen
 
-# Zola
-public
+# Hugo
+public/
+resources/_gen/
+.hugo_build.lock
 /.idea/httpRequests/

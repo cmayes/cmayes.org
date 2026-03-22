@@ -1,14 +1,12 @@
-+++
-title = "Deploying the Blog"
-date = 2023-07-03
-
-[taxonomies]
-tags = ["meta"]
-+++
+---
+title: "Deploying the Blog"
+date: 2023-07-03
+tags: ["meta"]
+---
 
 That was pretty easy! [Zola](https://www.getzola.org/) is a solid choice for static site generation.
 
-<!-- more -->
+<!--more-->
 
 The main things I had to figure out were getting the configuration straight and the overrides in place. If you're
 doing it right, you won't modify anything under the "themes" directory tree. If you want to override something,

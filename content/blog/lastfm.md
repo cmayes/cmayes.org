@@ -1,14 +1,12 @@
-+++
-title = "LastFM and Music Services"
-date = 2023-10-29
-
-[taxonomies]
-tags = ["music", "media", "streaming"]
-+++
+---
+title: "LastFM and Music Services"
+date: 2023-10-29
+tags: ["music", "media", "streaming"]
+---
 
 Reviving my LastFM account and thinking about how I've listened to music over time.
 
-<!-- more -->
+<!--more-->
 
 Something reminded me of [scrobbling] recently and I realized that last.fm has probably developed a way to support 
 Spotify by now ([they had, back in 2014][spotify-scrobbling], which is honestly a little later than I'd 
