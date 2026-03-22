@@ -1,0 +1,30 @@
+{{ with .Site.Params.social }}
+  {{ with .mastodonUrl }}
+  <a rel="me" href="{{ . }}" aria-label="Mastodon" target="_blank">
+    <i class="fa-brands fa-mastodon" aria-hidden="true" title="Mastodon"></i>
+  </a>
+  {{ end }}
+  {{ with .librefm }}
+  <a rel="me" href="https://libre.fm/user/{{ . }}/" aria-label="LibreFM" target="_blank">
+    <i class="fa-solid fa-music" aria-hidden="true" title="LibreFM"></i>
+  </a>
+  {{ end }}
+  {{ with .github }}
+  <a rel="me" href="https://github.com/{{ . }}" aria-label="GitHub" target="_blank">
+    <i class="fab fa-github" aria-hidden="true" title="GitHub"></i>
+  </a>
+  {{ end }}
+  {{ with .lastfm }}
+  <a rel="me" href="https://www.last.fm/user/{{ . }}" aria-label="LastFM" target="_blank">
+    <i class="fa-brands fa-lastfm" aria-hidden="true" title="LastFM"></i>
+  </a>
+  {{ end }}
+  {{ with .linkedin }}
+  <a href="https://www.linkedin.com/in/{{ . }}" aria-label="LinkedIn" target="_blank">
+    <i class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+  </a>
+  {{ end }}
+{{ end }}
+<a href="{{ .Site.BaseURL }}index.xml" aria-label="RSS feed" target="_blank">
+  <i class="fas fa-rss" aria-hidden="true" title="RSS feed"></i>
+</a>

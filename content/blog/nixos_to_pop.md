@@ -1,14 +1,12 @@
-+++
-title = "NixOS Is Not My Type"
-date = 2023-10-19
-
-[taxonomies]
-tags = ["linux"]
-+++
+---
+title: "NixOS Is Not My Type"
+date: 2023-10-19
+tags: ["linux"]
+---
 
 [NixOS](https://nixos.org/) has an intriguing approach to package management, but I don't like the tradeoffs.
 
-<!-- more -->
+<!--more-->
 
 After being frustrated by the tangle of .debs, [Snap packages](https://snapcraft.io/), 
 and [Flatpaks](https://www.flatpak.org/) on my recently re-installed [Ubuntu](https://ubuntu.com/) machine, I decided 

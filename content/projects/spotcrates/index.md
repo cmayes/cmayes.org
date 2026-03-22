@@ -1,17 +1,14 @@
-+++
-title = "Spotcrates"
-date = 2023-07-01
-
-[taxonomies]
-categories = ["software"]
-
-[extra]
-repo_path = "cmayes/spotcrates"
-+++
+---
+title: "Spotcrates"
+date: 2023-07-01
+categories: ["software"]
+params:
+  repoPath: "cmayes/spotcrates"
+---
 
 A Python script for managing Spotify playlists.
 
-<!-- more -->
+<!--more-->
 
 [Github](https://github.com/cmayes/spotcrates)
 

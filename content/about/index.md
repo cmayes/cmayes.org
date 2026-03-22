@@ -1,10 +1,8 @@
-+++
-title = "About Me"
-render = true
-template = "about.html"
-+++
+---
+title: "About Me"
+---
 
-{{ img(path="@/about/cmayes_sitting_wide.jpg", class="bordered", alt="A black and white portrait of me") }}
+{{< figure src="/about/cmayes_sitting_wide.jpg" class="bordered" alt="A black and white portrait of me" >}}
 
 &nbsp;
 
@@ -22,18 +20,13 @@ I use [Pop!_OS](https://pop.system76.com/) for my home machines as it's a fine, 
 My adventures with trendier distributions were entertaining and educational, but I favor a platform
 that I don't need to think about, these days.
 
-Most of my home projects start in Python (e.g. [Spotcrates](@/projects/spotcrates/index.md)) and may move to 
+Most of my home projects start in Python (e.g. [Spotcrates](/projects/spotcrates/)) and may move to 
 the JVM for heavier work. I'm starting to investigate [Rust](https://www.rust-lang.org/) as it seems to
 be maturing as a choice for efficient, performant software. I'd held off pursuing it as I'd chased many
 early-stage languages and frameworks that turn out to be short-lived.
 
 ### About This Page
 
-As part of my interest in Rust, I've decided to give [Zola](https://www.getzola.org/) a try for static 
-site generation. It's mainly [Markdown](https://www.wikiwand.com/en/Markdown) with no need for any Rust
-coding on my part, but it is a 
-[supported tool](https://developers.cloudflare.com/pages/framework-guides/deploy-a-zola-site/) for
-building and deploying to [Cloudflare Pages](https://pages.cloudflare.com), so I'm giving it a try.
-Thanks to [Justin Tennant](https://justintennant.me/) for creating the 
-[Papaya Zola theme](https://justintennant.me/projects/papaya/), thus saving me from the pain of 
-creating my own website layout.
+I've moved this site to [Hugo](https://gohugo.io/) for static site generation after migrating away from
+[Zola](https://www.getzola.org/). Hugo is a well-established tool with broad support and is natively supported
+by [Cloudflare Pages](https://pages.cloudflare.com), where this site is hosted.

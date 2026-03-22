@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ with .Site.Params.cdn.fontAwesome -}}
+    <link rel="stylesheet" href="{{ . }}">
+    {{- end }}
+    {{ block "extra_head" . }}{{ end }}
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1a1a1a;
+            --link: #0066cc;
+            --link-hover: #004499;
+            --border: #e0e0e0;
+            --code-bg: #f5f5f5;
+            --nav-bg: #f8f8f8;
+            --muted: #666666;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --fg: #e8e8e8;
+                --link: #6699ff;
+                --link-hover: #88aaff;
+                --border: #333333;
+                --code-bg: #2a2a2a;
+                --nav-bg: #222222;
+                --muted: #999999;
+            }
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { color: var(--link-hover); text-decoration: underline; }
+        nav {
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 1rem;
+        }
+        nav .nav-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        nav .site-title { font-weight: bold; font-size: 1.1rem; }
+        nav .nav-links { display: flex; gap: 1rem; }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+        footer .social-links { margin-bottom: 0.5rem; }
+        footer .social-links a {
+            margin: 0 0.4rem;
+            font-size: 1.3rem;
+            color: var(--muted);
+        }
+        footer .social-links a:hover { color: var(--link); }
+        h1, h2, h3 { margin: 1.2rem 0 0.6rem; line-height: 1.3; }
+        h1 { font-size: 1.8rem; }
+        h2 { font-size: 1.4rem; }
+        h3 { font-size: 1.1rem; }
+        p { margin: 0.8rem 0; }
+        ul, ol { margin: 0.8rem 0 0.8rem 1.5rem; }
+        li { margin: 0.3rem 0; }
+        code {
+            background: var(--code-bg);
+            padding: 0.1em 0.3em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        pre {
+            background: var(--code-bg);
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        pre code { background: none; padding: 0; }
+        img { max-width: 100%; height: auto; }
+        img.bordered { border: 1px solid var(--border); border-radius: 4px; }
+        .post-meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+        .post-tags { margin-top: 0.5rem; }
+        .post-tags a {
+            background: var(--code-bg);
+            padding: 0.15em 0.5em;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            margin-right: 0.3rem;
+        }
+        .post-list { list-style: none; margin: 0; padding: 0; }
+        .post-list li { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+        .post-list li:last-child { border-bottom: none; }
+        .post-list .post-date { color: var(--muted); font-size: 0.85rem; }
+        .index-banner { width: 100%; border-radius: 4px; margin-bottom: 1rem; }
+        .index-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .index-columns { grid-template-columns: 1fr; }
+        }
+        .read-more { margin-top: 0.5rem; font-size: 0.9rem; }
+        article.post > header { margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        .figure { margin: 1rem 0; }
+        .figure img { display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a class="site-title" href="/">{{ .Site.Title }}</a>
+            <div class="nav-links">
+                <a href="/projects/">Projects</a>
+                <a href="/blog/">Blog</a>
+                <a href="/tags/">Tags</a>
+                <a href="/about/">About</a>
+            </div>
+        </div>
+    </nav>
+    {{ block "main" . }}{{ end }}
+    <footer>
+        <div class="social-links">
+            {{ partial "social.html" . }}
+        </div>
+        <div>{{ .Site.Title }} &copy; {{ now.Year }}</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<main>
+    <section>
+        <img src="/sunrise_notch.jpg" class="index-banner" alt="A smoky sunrise."/>
+        <p>{{ .Site.Params.description }}</p>
+    </section>
+    <section class="index-columns">
+        <section>
+            <h2>Recent Projects</h2>
+            <ul class="post-list">
+            {{ range first 3 (where .Site.RegularPages "Section" "projects") }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                </li>
+            {{ end }}
+            </ul>
+            <p class="read-more"><a href="/projects/">More Projects &raquo;</a></p>
+        </section>
+        <section>
+            <h2>Recent Blog Posts</h2>
+            <ul class="post-list">
+            {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                </li>
+            {{ end }}
+            </ul>
+            <p class="read-more"><a href="/blog/">More blog posts &raquo;</a></p>
+        </section>
+    </section>
+</main>
+{{ end }}
